@@ -6,7 +6,7 @@ const Top = () => {
     <>
       <TopStyles>
         <h1>Daniel Bemsen</h1>
-        <h3>Software Engineer</h3>
+        <h3>Frontend Developer</h3>
         <p>
           Hello, I’m Daniel Bemsen Akosu, a solution focused Software Engineer
           with experience in frontend web-based applications, using modern

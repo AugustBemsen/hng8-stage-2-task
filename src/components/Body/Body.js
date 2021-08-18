@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import skills from "../../assets/SkillsData";
+import workHistory from "../../assets/workHistoryData";
 import Assets from "../Assets/Assets";
 import Skills from "../Skills/Skills";
 import Top from "../Top/Top";
@@ -12,8 +14,8 @@ const Body = () => {
       <BodyStyles>
         <TopBg />
         <Top />
-        <Skills />
-        <WorkHistory />
+        <Skills skills={skills} />
+        <WorkHistory workHistory={workHistory} />
         <Assets />
       </BodyStyles>
     </>
