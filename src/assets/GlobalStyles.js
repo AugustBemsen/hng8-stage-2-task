@@ -14,6 +14,10 @@ ${"" /* remove browser defaults and declare general styles */}
         width: 100%;
         background: #E3E3A2;
     }
+
+    .heading-text {
+        margin-top: 50px;
+    }
   
 `;
 

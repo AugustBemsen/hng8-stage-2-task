@@ -5,23 +5,21 @@ const WorkHistory = () => {
   return (
     <>
       <WorkHistoryStyles>
-        <div class="second-section">
-          <h1>WORK HISTORY</h1>
+        <h1 className="heading-text">WORK HISTORY</h1>
 
-          <div class="works">
-            <div class="work">
-              Frontend developer intern at Zuri <br />
-              Present
-            </div>
-            <div class="work">
-              Frontend developer intern at HNG Internship
-              <br />
-              2020
-            </div>
-            <div class="work">
-              SWIES at NTA <br />
-              2019
-            </div>
+        <div class="works">
+          <div class="work">
+            Frontend developer intern at Zuri <br />
+            Present
+          </div>
+          <div class="work">
+            Frontend developer intern at HNG Internship
+            <br />
+            2020
+          </div>
+          <div class="work">
+            SWIES at NTA <br />
+            2019
           </div>
         </div>
       </WorkHistoryStyles>
@@ -30,4 +28,17 @@ const WorkHistory = () => {
 };
 
 export default WorkHistory;
-const WorkHistoryStyles = styled.div``;
+const WorkHistoryStyles = styled.div`
+  position: relative;
+
+  .works {
+    margin-top: 40px;
+    .work {
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+  }
+`;
