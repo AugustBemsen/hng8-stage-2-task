@@ -26,7 +26,7 @@ ${"" /* remove browser defaults and declare general styles */}
         z-index: 1;
         pointer-events: none;
     }
-    
+
     .bg2 {
         position: absolute;
         bottom: 10px;
@@ -34,6 +34,13 @@ ${"" /* remove browser defaults and declare general styles */}
         z-index: 1;
         pointer-events: none;
   }
+
+  @media screen and (max-width: 520px) {
+
+    img {
+        display: none;
+    }
+}
 `;
 
 export default GlobalStyle;

@@ -29,4 +29,8 @@ const BodyStyles = styled.div`
   border-radius: 50px;
   border: 10px solid #ffffff;
   position: relative;
+
+  @media screen and (max-width: 789px) {
+    width: 90%;
+  }
 `;

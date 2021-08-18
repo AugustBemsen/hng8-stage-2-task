@@ -9,8 +9,12 @@ const WorkHistory = () => {
 
         <div class="works">
           <div class="work">
+            Frontend developer intern at HNGi8 <br />
+            2021
+          </div>
+          <div class="work">
             Frontend developer intern at Zuri <br />
-            Present
+            2021
           </div>
           <div class="work">
             Frontend developer intern at HNG Internship

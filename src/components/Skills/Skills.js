@@ -33,9 +33,10 @@ const SkillsStyles = styled.div`
     width: 100%;
     max-width: 600px;
     margin-top: 30px;
-  }
 
-  .techs {
+    @media screen and (max-width: 520px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .tech {
       padding: 15px;
       background: #f9f9f9;
