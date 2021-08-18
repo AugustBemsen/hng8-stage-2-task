@@ -18,7 +18,22 @@ ${"" /* remove browser defaults and declare general styles */}
     .heading-text {
         margin-top: 50px;
     }
-  
+    
+    .bg1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+    }
+    
+    .bg2 {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        z-index: 1;
+        pointer-events: none;
+  }
 `;
 
 export default GlobalStyle;
