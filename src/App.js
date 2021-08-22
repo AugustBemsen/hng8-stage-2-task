@@ -1,13 +1,16 @@
+import { useState } from "react";
 import GlobalStyle from "./assets/GlobalStyles";
 import Body from "./components/Body/Body";
+import Loader from "./components/Loader/Loader";
 
 function App() {
   const myName = "Daniel";
   console.log(myName);
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <>
       <GlobalStyle />
-      <Body />
+      {isLoading ? <Loader /> : <Body />}
     </>
   );
 }
