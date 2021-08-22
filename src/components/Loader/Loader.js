@@ -1,32 +1,46 @@
 import React from "react";
 import styled from "styled-components";
+import { AnimatePresence, motion } from "framer-motion";
 import images from "../../assets/images";
 
 const Loader = () => {
   return (
-    <>
-      <LoaderStyles>
+    <AnimatePresence>
+      <LoaderStyles exit={{ opacity: 0 }}>
         <div>
-          <img src={images.smile} alt="Realice" />
-          <h1>Realice</h1>
+          <motion.img
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.5, duration: 2 }}
+            src={images.smile}
+            alt="Realice"
+          />
+          <motion.h1
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 2, duration: 2 }}
+          >
+            Realice
+          </motion.h1>
         </div>
       </LoaderStyles>
-    </>
+    </AnimatePresence>
   );
 };
 
 export default Loader;
-const LoaderStyles = styled.div`
+const LoaderStyles = styled(motion.div)`
   width: 100vw;
   height: 100vh;
-  background: #c7c76d;
   overflow: hidden;
+  pointer-events: none;
 
   div {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
+    cursor: none !important;
     justify-content: center;
     flex-direction: column;
 

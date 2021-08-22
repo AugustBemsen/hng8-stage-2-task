@@ -7,6 +7,13 @@ function App() {
   const myName = "Daniel";
   console.log(myName);
   const [isLoading, setIsLoading] = useState(true);
+
+  useState(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
   return (
     <>
       <GlobalStyle />

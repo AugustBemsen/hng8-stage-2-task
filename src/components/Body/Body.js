@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import styled from "styled-components";
 import skills from "../../assets/SkillsData";
 import workHistory from "../../assets/workHistoryData";
@@ -10,20 +11,24 @@ import WorkHistory from "../WorkHistory/WorkHistory";
 
 const Body = () => {
   return (
-    <>
-      <BodyStyles>
+    <AnimatePresence>
+      <BodyStyles
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
         <TopBg />
         <Top />
         <Skills skills={skills} />
         <WorkHistory workHistory={workHistory} />
         <Assets />
       </BodyStyles>
-    </>
+    </AnimatePresence>
   );
 };
 
 export default Body;
-const BodyStyles = styled.div`
+const BodyStyles = styled(motion.div)`
   width: 80%;
   background: transparent;
   padding: 2rem;
